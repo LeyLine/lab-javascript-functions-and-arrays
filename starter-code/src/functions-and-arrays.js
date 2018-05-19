@@ -18,11 +18,17 @@ var words = [
 ];
 
 function findLongestWord(arr) {
-  arr.forEach(i => {
-    if (arr[i].length < arr[i + 1].length) {
-      splice(arr[i]);
-    }else
-  });
+  var lgth = 0;
+  var longest;
+
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i].length > lgth) {
+      var lgth = arr[i].length;
+      var longest = arr[i]
+
+    }
+  }
+  return longest;
 }
 // Calculating a Sum
 
